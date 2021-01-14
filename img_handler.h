@@ -7,6 +7,7 @@
 #include <highgui.hpp>
 #include <types_c.h>
 #include <mat.hpp>
+#include <imgproc.hpp>
 
 using namespace cv;
 
@@ -23,6 +24,7 @@ private:
     IplImage* image = 0;
     IplImage* src = 0;
     Mat img;
+    Mat img_out;
 };
 
 #endif // IMG_HANDLER_H

@@ -12,6 +12,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5Core)
+find_package(Qt6Core)
 
 find_package( OpenCV REQUIRED )
 if( OpenCV_FOUND )
