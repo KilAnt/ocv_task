@@ -19,6 +19,10 @@ class img_handler : public QObject
 public:
     explicit img_handler(QObject *parent = nullptr);
     virtual ~img_handler();
+
+    void load(QString path);
+    void save(QString path);
+    void res(QString path);
 signals:
 private:
     IplImage* image = 0;

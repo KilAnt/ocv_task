@@ -31,7 +31,8 @@ add_executable(ocv_task
   terminal.cpp
   img_handler.h
   img_handler.cpp
-
+  behavior.h
+  behavior.cpp
 )
 target_link_libraries(ocv_task Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})

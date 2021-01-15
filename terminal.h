@@ -19,7 +19,7 @@ public:
     explicit terminal(QObject *parent = nullptr);
     virtual ~terminal();
 
-    void start();
+    QString start();
     void out(QString string);
     QString inp(QString *string);
 signals:

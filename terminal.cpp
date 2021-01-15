@@ -10,12 +10,13 @@ terminal::~terminal()
 
 }
 
-void terminal::start()
+QString terminal::start()
 {
     QString answer;
-    out("Enter your image directory");
+    out("Enter your image directory or call 'help'");
     inp(&answer);
     out(answer);
+    return answer;
 }
 
 void terminal::out(QString string)
