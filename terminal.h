@@ -18,7 +18,7 @@ class terminal : public QObject
 public:
     explicit terminal(QObject *parent = nullptr);
     virtual ~terminal();
-
+    void help();
     QString start();
     void out(QString string);
     QString inp(QString *string);

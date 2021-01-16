@@ -10,12 +10,16 @@ terminal::~terminal()
 
 }
 
+void terminal::help()
+{
+
+}
+
 QString terminal::start()
 {
     QString answer;
-    out("Enter your image directory or call 'help'");
+    out("Enter command or call 'help'");
     inp(&answer);
-    out(answer);
     return answer;
 }
 
@@ -28,6 +32,6 @@ void terminal::out(QString string)
 QString terminal::inp(QString *string)
 {
     QTextStream inp_text(stdin);
-    inp_text>>*string;
+    *string = inp_text.readLine();
     return *string;
 }

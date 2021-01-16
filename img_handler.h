@@ -20,15 +20,14 @@ public:
     explicit img_handler(QObject *parent = nullptr);
     virtual ~img_handler();
 
-    void load(QString path);
-    void save(QString path);
-    void res(QString path);
+    void load(QString name, QString path);
+    void save(QString name, QString path);
+    void res(QString from_name, QString to_name, quint16 width, quint16 heigth);
+    void blr(QString from_name, QString to_name, quint16 size);
 signals:
 private:
-    IplImage* image = 0;
-    IplImage* src = 0;
-    Mat img;
-    Mat img_out;
+    QMap<QString, Mat> map;
+    void display(QString name);
 };
 
 #endif // IMG_HANDLER_H
