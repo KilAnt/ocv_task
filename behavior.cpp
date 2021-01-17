@@ -2,6 +2,7 @@
 
 behavior::behavior(QObject *parent) : QObject(parent)
 {
+    //Waiting for user action
     while (1) {
         user_answer = t.start();
         detect_command(user_answer);

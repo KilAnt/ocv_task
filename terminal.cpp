@@ -10,11 +10,6 @@ terminal::~terminal()
 
 }
 
-void terminal::help()
-{
-
-}
-
 QString terminal::start()
 {
     QString answer;
